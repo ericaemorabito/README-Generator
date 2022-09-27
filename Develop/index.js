@@ -11,9 +11,9 @@ const generateMarkdown = require('./utils/generateMarkdown'); //imported utils f
 // ];
 
 // TODO: Create a function to write README file
-const createREADME = function() {
-  fs.writeFile('README.md', generateMarkdown(data))
-};
+// const createREADME = function() {
+//   fs.writeFile('README.md', generateMarkdown(data))
+// };
 
 // Function to initialize app
 const runCode = function init() {
@@ -68,9 +68,8 @@ const runCode = function init() {
       }
     ])
     .then((data) =>
-      createREADME(data));
+      fs.writeFileSync('README.md', generateMarkdown(data)));
     //.catch((err) => console.log(err))
 };
 
 runCode();
-// Function call to initialize app();

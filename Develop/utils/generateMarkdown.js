@@ -11,7 +11,7 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // Function to generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = function(data) {
   return `# ${data.title}
 
   ## Description
@@ -22,7 +22,6 @@ function generateMarkdown(data) {
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
@@ -36,14 +35,6 @@ function generateMarkdown(data) {
   
   - ${data.usage}
   
-  ## Credits
-  
-  List your collaborators, if any, with links to their GitHub profiles.
-  
-  If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-  
-  If you followed tutorials, include links to those here as well.
-  
   ## License
   
   - ${data.license}
@@ -56,7 +47,7 @@ function generateMarkdown(data) {
   
   - ${data.test}
 
-  ##Questions
+  ## Questions
 
   - Need to ask a question? 
   - Check out my github: [Git Hub Profile](https://github.com/${data.github})
@@ -64,6 +55,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = {
-  generateMarkdown
-};
+module.exports = generateMarkdown;
