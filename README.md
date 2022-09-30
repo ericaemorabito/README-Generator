@@ -15,8 +15,7 @@ node index.js
 - Respond to the prompts in the terminal.
 - View the new README.md file.
 
-Also, view the steps in this video tutorial: 
-Follow the steps in this video tutorial:[[Video tutorial for README Generator](https://drive.google.com/file/d/1EAHFGDonCYiVw6ia2Fu_1UYS_RoCasXe/view)
+Also, view the steps in action in this video tutorial:[Video tutorial for README Generator](https://drive.google.com/file/d/1EAHFGDonCYiVw6ia2Fu_1UYS_RoCasXe/view)
 
 ## Usage
 
