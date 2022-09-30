@@ -3,18 +3,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown'); //imported utils file
 
-// TODO: Create an array of questions for user input
-// const questions = [
-//   'Write a description of your project.',
-//   'What are the steps required to install your project?',
-//   'What license did you use?'
-// ];
-
-// TODO: Create a function to write README file
-// const createREADME = function() {
-//   fs.writeFile('README.md', generateMarkdown(data))
-// };
-
 // Function to initialize app
 const runCode = function init() {
   inquirer
@@ -53,7 +41,7 @@ const runCode = function init() {
         type: 'list',
         name: 'license',
         message: 'Choose your license.',
-        choices: ['license 1', 'license2'
+        choices: ['Github', 'MIT', 'GPLv3'
         ],
       },
       {
@@ -68,6 +56,7 @@ const runCode = function init() {
       }
     ])
     .then((data) =>
+    //creating the README file with the data
       fs.writeFileSync('README.md', generateMarkdown(data)));
     //.catch((err) => console.log(err))
 };
