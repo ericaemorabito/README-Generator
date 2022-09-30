@@ -1,9 +1,9 @@
 // Function that returns a license badge based on which license is passed in
-
 let license;
 let badge; 
-
-function renderLicenseBadge(license) {
+ 
+// Function to generate markdown for README
+const generateMarkdown = function(data) {
   switch (data.license){
     case 'Github':
       badge = '[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)';
@@ -16,27 +16,6 @@ function renderLicenseBadge(license) {
       break;
   }
 
-  // if (data.license = 'Github'){
-  //   let license = 'Github';
-  //   let badge = '[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)';
-  // } else if (data.license = 'MIT'){
-  //   let license = 'MIT';
-  //   let badge = '[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)';
-  // } else {
-  //   let license= 'GPLv3';
-  //   let badge =  '[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)';
-  // }
-}
-
-// Github
-//[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-//Mit license
-//[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-// GPLv
-// [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
-
-// Function to generate markdown for README
-const generateMarkdown = function(data) {
   return `# ${data.title}
 
   ## Description
