@@ -16,7 +16,7 @@ node index.js
 - View the new README.md file.
 
 Also, view the steps in this video tutorial: 
-Follow the steps in this video tutorial: [Video tutorial in VS Code] (https://drive.google.com/file/d/1EAHFGDonCYiVw6ia2Fu_1UYS_RoCasXe/view)
+Follow the steps in this video tutorial: [([Video tutorial in VS Code] (https://drive.google.com/file/d/1EAHFGDonCYiVw6ia2Fu_1UYS_RoCasXe/view))]
 
 ## Usage
 
