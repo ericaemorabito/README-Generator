@@ -2,18 +2,16 @@
 
 ## Your Task
 
-This project is a command-line application that dynamically generates a professional README.md file from a user's input.
-
-The application will be invoked by using the following command:
-
-```bash
-node index.js
-```
+This project is a command-line application that dynamically generates a professional README.md file from a user's input. 
+- This project helps developers create a professional README.md file efficiently. 
 
 ## Installation
 - Navigate to the directory with the index.js file.
 - Open the terminal.
-- Run "node index.js".
+- Run 
+```bash
+node index.js
+```
 - Respond to the prompts in the terminal.
 - View the new README.md file.
 
